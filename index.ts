@@ -16,8 +16,7 @@ export const applicationData = (appName?: string): string => {
     } else if (process.platform === 'darwin') {
         appData = os.homedir() + '/Library/Application Support';
     } else if (process.platform === 'linux') {
-        // todo:
-        appData = os.homedir() + '/.config';
+        appData = '/var/lib';
     }
 
     if (appName) {

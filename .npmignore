@@ -1,0 +1,4 @@
+*.ts
+!*.d.ts
+pnpm-lock.yaml
+tsconfig.json
