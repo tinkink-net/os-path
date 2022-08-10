@@ -1,19 +1,21 @@
 {
-  "name": "@maiyatang/os-path",
-  "version": "1.0.1",
+  "name": "@tinkink/os-path",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc --declaration -p tsconfig.json",
     "pub": "npm run build && npm publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:watch": "vitest",
+    "test": "vitest run"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^17.0.21",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.2"
+    "typescript": "^4.6.2",
+    "vitest": "^0.21.1"
   },
   "publishConfig": {
     "access": "public"
